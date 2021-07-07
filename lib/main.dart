@@ -1,15 +1,28 @@
 import 'package:flutter/material.dart';
 
+void main() => runApp(Demo());
+
 class Demo extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    Widget searchBar = Scaffold(
       appBar: AppBar(
         title: Text("Search Cards"),
         actions: <Widget>[
           IconButton(icon: Icon(Icons.search), onPressed: () {})
         ],
+      ),
+    );
+
+    return MaterialApp(
+      title: 'Demo',
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Welcome to Flutter'),
+        ),
+        body: Center(
+          child: searchBar,
+        ),
       ),
     );
   }
