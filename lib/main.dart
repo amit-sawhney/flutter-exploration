@@ -126,7 +126,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 return DisplayCard(
                   img: 'ECE.jpg',
                   title: '${items[index]}',
-                  address: '2709 Ark Drive',
+                  address:
+                      'Electrical and Computer Engineering Building, 306 N Wright St, Urbana, IL 61801',
                   rating: '4.5',
                 );
               },
