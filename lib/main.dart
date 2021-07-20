@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Flutter Exploration Demo'),
     );
   }
 }
@@ -124,9 +124,10 @@ class _MyHomePageState extends State<MyHomePage> {
               itemCount: items.length,
               itemBuilder: (BuildContext context, int index) {
                 return DisplayCard(
-                  img: 'daniel_moon.jpg',
+                  img: 'ECE.jpg',
                   title: '${items[index]}',
-                  address: '2709 Ark Drive',
+                  address:
+                      'Electrical and Computer Engineering Building, 306 N Wright St, Urbana, IL 61801',
                   rating: '4.5',
                 );
               },
